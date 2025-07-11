@@ -1,0 +1,16 @@
+{
+    "HASSA-TEAM1-VIP": {
+        "active": true,
+        "expires_at": "2025-08-10T09:41:41.978416",
+        "max_users": 15,
+        "users": []
+    },
+    "1": {
+        "active": true,
+        "expires_at": "2025-07-19T14:47:16.053690",
+        "max_users": 1,
+        "users": [
+            "127913732967272"
+        ]
+    }
+}
