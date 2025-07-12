@@ -4,7 +4,6 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
 BOT_TOKEN = "8128063909:AAG0WFoqw9eOT3-m0TrWofAtI8LaPfCZSH4"
-ADMIN_USERNAME = "@Dz4747"
 ADMIN_USERNAME = "@TAKIHAMATA"
 CLIENTS_FILE = "clients.json"
 
