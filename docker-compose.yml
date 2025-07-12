@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  quotex-bot:
+    build: .
+    container_name: quotex-trading-bot
+    restart: unless-stopped
+    volumes:
+      # Mount config directory for persistent settings
+      - ./config:/app/config
+      # Mount logs directory
+      - ./logs:/app/logs
+      # Mount session files for Telegram authentication
+      - ./sessions:/app/sessions
+    environment:
+      - TZ=UTC
+    networks:
+      - quotex-network
+    # Enable interactive mode for bot configuration
+    stdin_open: true
+    tty: true
+
+networks:
+  quotex-network:
+    driver: bridge
+
+volumes:
+  config:
+  logs:
+  sessions:
